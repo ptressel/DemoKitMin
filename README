@@ -1,0 +1,5 @@
+This is a very stripped-down version of DemoKit from the Google ADK.
+It's an attempt to get the accessory communication working.
+As of now, it dies in the first read() or available() call with an
+EINVAL deep in an ioctl.  Suspect the file descriptor is getting
+closed -- maybe going out of scope.
